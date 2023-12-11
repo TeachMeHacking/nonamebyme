@@ -9,4 +9,4 @@ def okrun():
     @app.route("/geturl")
     def getUrl():
         return async_worker.publicurl
-    app.run()
+app.run()
