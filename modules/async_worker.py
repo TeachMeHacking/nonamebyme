@@ -1,5 +1,5 @@
 import threading
-
+import myowne
 
 class AsyncTask:
     def __init__(self, args):
@@ -17,7 +17,6 @@ def worker():
     global async_tasks
 
 
-    import myowne
     import traceback
     import math
     import numpy as np
