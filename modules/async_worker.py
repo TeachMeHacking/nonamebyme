@@ -1,5 +1,5 @@
 import threading
-import myowne
+
 
 class AsyncTask:
     def __init__(self, args):
@@ -50,7 +50,7 @@ def worker():
         flag = f'''App started successful. Use the app with {str(async_gradio_app.local_url)} or {str(async_gradio_app.server_name)}:{str(async_gradio_app.server_port)}'''
         if async_gradio_app.share:
             flag += f''' or {async_gradio_app.share_url}'''
-        myowne.okrun()
+    
         print(flag)
     except Exception as e:
         print(e)
