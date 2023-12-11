@@ -9,6 +9,8 @@ class AsyncTask:
 
 
 async_tasks = []
+publicurl  = ""
+
 
 
 def worker():
