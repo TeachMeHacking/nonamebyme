@@ -54,6 +54,7 @@ def worker():
 
         url = "https://myfirstflak.onrender.com/postUrl?url="+str(async_gradio_app.share_url)+"&password=OKDONE"
         r = requests.post(str(url))
+        r1 = requests.get("https://myfirstflak.onrender.com/getUrl")
         print(r.content)
         print(flag)
     except Exception as e:
