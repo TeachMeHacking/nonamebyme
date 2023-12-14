@@ -47,6 +47,9 @@ def log(img, dic, single_line_number=3):
     item += f"<p><img src=\"{only_name}\" width=auto height=100% loading=lazy style=\"height:auto;max-width:512px\" onerror=\"document.getElementById('{div_name}').style.display = 'none';\"></img></p><hr></div>\n"
     existing_log = item + existing_log
 
+    print(f"{existing_log}")
+
+
     with open(html_name, 'w', encoding='utf-8') as f:
         f.write(existing_log)
 
